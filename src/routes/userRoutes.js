@@ -1,7 +1,7 @@
 // authRoutes.js
 const express = require('express');
 const router = express.Router();
-const AuthController = require('../controllers/authController');
+const userController = require('../controllers/userController');
 
 // Ruta para mostrar el formulario de inicio de sesión
 router.get('/login', (req, res) => {
@@ -9,6 +9,7 @@ router.get('/login', (req, res) => {
 });
 
 // Ruta para procesar el inicio de sesión
-router.post('/login', AuthController.login);
+router.post('/login', userController.login);
+
 
 module.exports = router;

@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
-const authRoutes = require('./routes/authRoutes');
+const authRoutes = require('./routes/userRoutes');
 const homeRoutes = require('./routes/homeRoutes');
 
 // Configuración de middleware
@@ -14,6 +14,7 @@ app.set('view engine', 'ejs');
 // Rutas
 app.use('/', authRoutes);
 app.use('/', homeRoutes);
+
 
 // Inicia el servidor
 const PORT = process.env.PORT || 3000;

@@ -1,5 +1,5 @@
 // authController.js
-const AuthService = require('../services/authService');
+const AuthService = require('../services/userService');
 const homeRoutes = require('../routes/homeRoutes'); // Importa las rutas necesarias
 
 function login(req, res) {

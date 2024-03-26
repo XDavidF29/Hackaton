@@ -1,5 +1,5 @@
 // authService.js
-const UserModel = require('../models/user');
+const UserModel = require('../models/userModel');
 
 // Simula una base de datos de usuarios
 const users = [
