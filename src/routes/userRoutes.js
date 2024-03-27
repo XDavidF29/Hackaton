@@ -11,5 +11,12 @@ router.get('/login', (req, res) => {
 // Ruta para procesar el inicio de sesión
 router.post('/login', userController.login);
 
+router.post('/login', userController.login);
+
+router.get('/register', (req, res) => {
+    res.render('register', { error: null });
+});
+
+router.post('/register', userController.register);
 
 module.exports = router;

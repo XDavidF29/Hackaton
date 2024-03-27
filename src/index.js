@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
-const authRoutes = require('./routes/userRoutes');
+const userRoutes = require('./routes/userRoutes');
 const homeRoutes = require('./routes/homeRoutes');
 
 // Configuración de middleware
@@ -12,7 +12,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // Rutas
-app.use('/', authRoutes);
+app.use('/', userRoutes);
 app.use('/', homeRoutes);
 
 

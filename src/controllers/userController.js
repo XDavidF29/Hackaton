@@ -1,6 +1,6 @@
 // authController.js
 const AuthService = require('../services/userService');
-const homeRoutes = require('../routes/homeRoutes'); // Importa las rutas necesarias
+const UserService = require('../services/userService');
 
 function login(req, res) {
     const { username, password } = req.body;
@@ -14,4 +14,14 @@ function login(req, res) {
     }
 }
 
-module.exports = { login };
+function register(req, res) {
+    const { username, password } = req.body;
+    const newUser = UserService.createUser(username, password);
+    if (newUser) {
+        res.redirect('/'); // Redirige al usuario a la página de inicio de sesión
+    } else {
+        res.render('register', { error: 'Error al registrar el usuario' });
+    }
+}
+
+module.exports = { login, register};
