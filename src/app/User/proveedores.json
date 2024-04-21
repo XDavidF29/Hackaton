@@ -1,0 +1,49 @@
+[
+    {
+      "id": 1,
+      "nombre": "Turismo Aventura",
+      "calificacion": 4.8,
+      "comentarios": [
+        "Excelente servicio, lo recomiendo.",
+        "Los guías son muy profesionales y atentos."
+      ],
+      "servicios": [
+        {
+          "id": 1,
+          "nombre": "Tour guiado por la ciudad",
+          "descripcion": "Recorrido a pie por los lugares más emblemáticos de la ciudad.",
+          "precio": 50000
+        },
+        {
+          "id": 2,
+          "nombre": "Excursión a la montaña",
+          "descripcion": "Caminata por un sendero natural con impresionantes vistas.",
+          "precio": 80000
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Cultural Experience",
+      "calificacion": 4.5,
+      "comentarios": [
+        "Me encantó la experiencia, aprendí mucho sobre la cultura local.",
+        "Los guías son muy conocedores y apasionados."
+      ],
+      "servicios": [
+        {
+          "id": 3,
+          "nombre": "Visita a un mercado local",
+          "descripcion": "Inmersión en la cultura local a través de sus productos y tradiciones.",
+          "precio": 30000
+        },
+        {
+          "id": 4,
+          "nombre": "Clase de cocina tradicional",
+          "descripcion": "Aprende a preparar platos típicos de la región.",
+          "precio": 60000
+        }
+      ]
+    }
+  ]
+  

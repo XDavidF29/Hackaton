@@ -1,0 +1,24 @@
+<div class="servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li *ngFor="let servicio of servicios">
+        <h3>{{ servicio.nombre }}</h3>
+        <p>{{ servicio.descripcion }}</p>
+        <span class="precio">{{ servicio.precio  }}</span>
+        <span class="proveedor">Proveedor: {{ servicio.proveedor }}</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="productos">
+    <h2>Productos</h2>
+    <ul>
+      <li *ngFor="let producto of productos">
+        <h3>{{ producto.nombre }}</h3>
+        <p>{{ producto.descripcion }}</p>
+        <span class="precio">{{ producto.precio  }}</span>
+        <span class="disponibilidad">Disponibilidad: {{ producto.disponibilidad }}</span>
+        <span class="proveedor">Proveedor: {{ producto.proveedor }}</span>
+      </li>
+    </ul>
+  </div>

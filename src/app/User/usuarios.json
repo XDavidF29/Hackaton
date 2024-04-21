@@ -1,0 +1,40 @@
+[
+    {
+      "nombre": "Juan Pérez",
+      "correo": "juan.perez@correo.com",
+      "celular": 3123456789,
+      "contraseña": "micontraseña",
+      "reservas": [
+        {
+          "id": 1,
+          "fecha": "2024-04-20",
+          "hora": "10:00",
+          "servicio": {
+            "id": 1,
+            "nombre": "Tour guiado por la ciudad",
+            "descripcion": "Recorrido a pie por los lugares más emblemáticos de la ciudad.",
+            "precio": 50000
+          }
+        },
+        {
+          "id": 2,
+          "fecha": "2024-05-15",
+          "hora": "15:00",
+          "servicio": {
+            "id": 2,
+            "nombre": "Entrada al museo",
+            "descripcion": "Acceso a la exposición permanente del museo de arte.",
+            "precio": 20000
+          }
+        }
+      ]
+    },
+    {
+      "nombre": "Ana Martínez",
+      "correo": "ana.martinez@correo.com",
+      "celular": 3101234567,
+      "contraseña": "micontraseña2",
+      "reservas": []
+    }
+  ]
+  

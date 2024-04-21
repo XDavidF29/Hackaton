@@ -1,0 +1,37 @@
+<div class="container">
+  <h2>Usuarios</h2>
+  <ul class="usuarios-list">
+    <li *ngFor="let usuario of usuarios">
+      <h3>{{ usuario.nombre }}</h3>
+      <p>Correo: {{ usuario.correo }}</p>
+      <p>Celular: {{ usuario.celular }}</p>
+      <ul class="reservas-list">
+        <li *ngFor="let reserva of usuario.reservas">
+          <p>Fecha: {{ reserva.fecha }}</p>
+          <p>Hora: {{ reserva.hora }}</p>
+          <p>Servicio: {{ reserva.servicio.nombre }}</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Proveedores</h2>
+  <ul class="proveedores-list">
+    <li *ngFor="let proveedor of proveedores">
+      <h3>{{ proveedor.nombre }}</h3>
+      <p>Calificación: {{ proveedor.calificacion }}</p>
+      <ul class="comentarios-list">
+        <li *ngFor="let comentario of proveedor.comentarios">
+          <p>{{ comentario }}</p>
+        </li>
+      </ul>
+      <ul class="servicios-list">
+        <li *ngFor="let servicio of proveedor.servicios">
+          <p>{{ servicio.nombre }}</p>
+          <p>Descripción: {{ servicio.descripcion }}</p>
+          <p>Precio: {{ servicio.precio  }}</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
